@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api/v1/", dataRoutes);
+app.use(express.static('public'));
 //const PORT = process.env.PORT;
 
 app.listen(5000, () => {

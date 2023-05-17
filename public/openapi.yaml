@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Stocks Plugin API
+  version: 1.0.0
+paths:
+  /stocks:
+    get:
+      summary: Fetch all stocks
+      responses:
+        '200':
+          description: Successful response
+      x-code-samples:
+        - lang: curl
+          source: |
+            curl -X GET "https://your-api-host.com/stocks" -H "accept: application/json"
+  /stock/details:
+    post:
+      summary: Fetch stock details
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ticker:
+                  type: string
+                  example: AAPL
+      responses:
+        '200':
+          description: Successful response
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+      x-code-samples:
+        - lang: curl
+          source: |
+            curl -X POST "https://your-api-host.com/stock/details" -H "Content-Type: application/json" -d '{"ticker": "AAPL"}"'

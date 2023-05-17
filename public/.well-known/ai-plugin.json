@@ -1,0 +1,19 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Stocks Plugin (no auth)",
+    "name_for_model": "stocks",
+    "description_for_human": "Plugin for getting stocks information,",
+    "description_for_model": "Plugin for getting stocks information,",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "https://stocks-plugin.onrender.com/openapi.yaml",
+      "is_user_authenticated": false
+    },
+    "logo_url": "https://stocks-plugin.onrender.com/logo.jpg",
+    "contact_email": "mugishasamuel400@gmail.com",
+    "legal_info_url": "https://stocks-plugin.onrender.com/legal"
+  }
+  
