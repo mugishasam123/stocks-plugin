@@ -12,7 +12,7 @@ paths:
       x-code-samples:
         - lang: curl
           source: |
-            curl -X GET "https://your-api-host.com/stocks" -H "accept: application/json"
+            curl -X GET "https://stocks-plugin.onrender.com/api/v1/stocks" -H "accept: application/json"
   /stock/details:
     post:
       summary: Fetch stock details
@@ -36,4 +36,4 @@ paths:
       x-code-samples:
         - lang: curl
           source: |
-            curl -X POST "https://your-api-host.com/stock/details" -H "Content-Type: application/json" -d '{"ticker": "AAPL"}"'
+            curl -X POST "https://stocks-plugin.onrender.com/api/v1/StockDetails" -H "Content-Type: application/json" -d '{"ticker": "AAPL"}"'
